@@ -1,0 +1,161 @@
+.card-title{
+  font-size: 16px;
+}
+.card-text{
+  font-size: 13px;
+  height: 60px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.card-body{
+  height: 120px;
+}
+.card-footer{
+  display: none;
+}
+.card:hover .card-footer {
+  display: block;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  transition:all 9900s ease-in-out;
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.modal-body{
+  background: white;
+  max-height: 100%;
+}
+.a, i{
+  color: white;
+  padding: 5px;
+}
+.modal-footer {
+  display: block;
+}
+.round { border-radius: 50%; }
+.form-control{
+  max-width: 95%;
+  margin: 0 auto;
+  float: none;
+}
+.form-title{
+  padding-top: auto;
+  background-color: transparent;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  border: transparent;
+  caret-color: white;
+  text-decoration-color: white;
+}
+.form-control::-webkit-input-placeholder {
+  color: #fff0;
+  opacity: 1;
+}
+.form-title::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+::placeholder{
+  color: dimgrey;
+}
+#why .form-control::placeholder{
+  color: white;
+  opacity: 1;
+}
+.form-title:focus {
+  color: white;
+  background-color: transparent;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+.chipp {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+.chips.chips-initial {
+  border-bottom: 1px solid #ddd;
+  max-width: 80%;
+}
+.chip {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  line-height: 30px;
+  padding: 0px 13px;
+  border-radius: 16px;
+  background-color: #16a085;
+  margin: 5px 5px;
+  display: inline-block;
+  outline: none;
+}
+.chip:focus {
+  background-color: #16a085;
+  color: #fff;
+}
+.closebtn {
+  cursor: pointer;
+  color: #fff;
+}
+input.chip-input {
+  display: inline-block ;
+  float: none;
+  width: 120px;
+  min-width: 30px;
+  border:none;
+  outline: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+.collapse.width {
+  height: auto;
+  width:0;
+  -webkit-transition: width 0.35s ease;
+  -moz-transition: width 0.35s ease;
+  -o-transition: width 0.35s ease;
+  transition: width 0.35s ease;
+}
+
+
+#demo {
+  -webkit-transition: width 2s ease;
+  -moz-transition: width 2s ease;
+  -o-transition: width 2s ease;
+  transition: width 2s ease;
+
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  background: transparent;
+  vertical-align: middle;
+  line-height: 30px;
+  height: 30px;
+
+  width: 0px;
+}
+#demo.in {
+  width: 130px;
+}
